@@ -8,7 +8,7 @@
 <body>
     <form>
         <div>
-            First Name: <input id="fName" name="fName">
+            First Name: <input required id="fName" name="fName">
         </div>
         <div>
             <label for="lName">Last Name:</label> 
@@ -21,7 +21,48 @@
             <input type="password" placeholder="Password">
         </div>
         <div>
+            <input type="password" placeholder="Confirm Password">
+        </div>
+        <div>
+            Pick the color for your t-shirt: <input type="color" name="col" id="">
+        </div>
+        <div>
+            <input type="date" name="" id="">
+            <input type="time" name="" id="">
+            <input type="month" name="" id="">
+            <input type="week" name="" id="">
+            <input type="datetime-local" name="" id="">
+            <input type="datetime" name="" id="">
+        </div>
+        <div>
+            Upload your recent photo: <input type="file" name="" id="">
+        </div>
+        <br>
+        <div>
+            How did you come to know about us? <br>
+            <input type="checkbox" name="" id=""> Newspaper Ad <br>
+            <input type="checkbox" name="" id="">
+            Reference <br>
+            <input type="checkbox">
+            Social Media <br>
+            <input type="checkbox" name="" onclick="document.getElementById('hidden').type = 'text'">
+            Other
+            <input id="hidden" type="hidden" name="">
+        </div>
+        
+        <div>
+            <input type="checkbox" name="tnc" id="tnc" required>
+            <label for="tnc">I agree to the terms of services</label>
+        </div>
+        <div>
+            <input type="checkbox" name="" id="sms" checked>
+            <label for="sms">I would like to recieve notifications about offers etc through sms/whatsapp/email</label>
+        </div>
+        <div>
+            <input type="button" value="No Action">
             <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+            <button>Button</button>
         </div>
     </form>
     
