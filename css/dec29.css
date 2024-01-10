@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Lato:wght@300&family=Rubik+Doodle+Shadow&family=Rubik+Maps&display=swap');
+
+a{
+    text-decoration: none;
+}
+.social-links{
+    font-size: 48px;
+}
+/* Pseudo Classes */
+.social-links:hover{
+    color: green;
+    font-size: 50px;
+}
+.social-links:active{
+    color: goldenrod;
+    background-color: black;
+}
+.social-links:visited{
+    color: gray;
+}
+
+.site-title:hover, .subtitle:hover{
+    color: brown;
+}
+.site-title:active, .subtitle:active{
+    background-color: black;
+    color: goldenrod;
+}
+
+#google{
+    font-family: Impact, Haettenschweiler,  'Arial Narrow Bold', sans-serif;
+}
+#facebook{
+    font-family: 'Cinzel', serif;
+}
+#twitter{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+#instagram{
+    font-family: 'Rubik Doodle Shadow', system-ui;
+}
+#youtube{
+    font-family: 'Rubik Maps', system-ui;
+    font-style: italic;
+}

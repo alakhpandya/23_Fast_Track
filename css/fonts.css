@@ -1,0 +1,40 @@
+/* Alex Brush */
+@font-face{
+    src: url("/fonts/Alex_Brush/AlexBrush-Regular.ttf");
+    font-family: "Alex Brush";
+}
+
+/* Dhurjati */
+@font-face{
+    src: url("/fonts/Dhurjati/Dhurjati-Regular.ttf");
+    font-family: Dhurjati;
+}
+
+/* Grand Hotel */
+@font-face {
+    font-family: "JD's Fonts";
+    src: url("/fonts/Grand_Hotel/GrandHotel-Regular.ttf");
+}
+
+/* Ubuntu */
+@font-face {
+    font-family: Ubuntu;
+    src: url("/fonts/Ubuntu/Ubuntu-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url("/fonts/Ubuntu/Ubuntu-Bold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url("/fonts/Ubuntu/Ubuntu-BoldItalic.ttf");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+}
