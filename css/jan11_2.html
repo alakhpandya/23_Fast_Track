@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* Ignore the above code for now */
+
+    img{
+        /* width: 1450px; */
+
+        /* vw & vh */
+        /* width: 100vw; */
+        /* width: 50vw; */
+        /* width: 120vw; */
+
+        /* height: 600px; */
+        /* height: 100vh; */
+    }
+    .outer{
+        background-color: yellow;
+        height: 500px;
+        width: 1200px;
+        /* width: 90vw; */
+    }
+    .inner{
+        background-color: red;
+        /* background-color: black; */
+        height: 350px;
+        /* width: 90vw; */
+        width: 90%;     /* 1080px */
+    }
+    .inner-most{
+        background-color: black;
+        /* background-color: rgb(155, 213, 78); */
+        /* background-color: #9BD54E; */
+        /* background-color: #71709c; */
+        /* background-color: rgba(39, 243, 8, 0.5); */
+        /* background-color: rgb(0,171,107); */
+        height: 200px;
+        width: 80%;     /* 864px */
+    }
+    a{
+        color: black;
+        font-size: 1.3rem;      /* 20.8px */
+        text-decoration: none;
+        background-color: white;
+        /* width: 100%;    864px */
+        /* width: 20em;       31.2px */
+        /* width: 90vw; */
+        width: 266px;
+        height: 100vh;
+        /* height or width don't apply on inline elements except button & img */
+    }
+</style>
+<body>
+    <!-- <img src="/images/mountain-landscape-2031539_1280.jpg" alt=""> -->
+    <div class="outer">
+        <br><br><br>
+        <div class="inner">
+            <br><br><br>
+            <div class="inner-most">
+                <br><br><br><br>
+                <a href="#">Click me</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
