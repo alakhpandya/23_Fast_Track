@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* *{
+        margin: 0;
+    } */
+    h1{
+        text-align: center;
+    }
+    #i{
+        background-color: orange;
+    }
+    #india{
+        background-color: green;
+    }
+
+    /* Pseudo Elements */
+    h1::before{
+        content: "I";
+        /* content: "";
+        height: 5rem;
+        width: 300px; */
+        display: block;
+        background-color: orange;
+    }
+    h1::after{
+        content: "India";
+        display: block;
+        background-color: green;
+    }
+    img::before{
+        content: "Car";
+    }
+</style>
+<body>
+    <!-- <h1 id="i">I</h1>
+    <h1>Love</h1>
+    <h1 id="india">India</h1> -->
+
+    <h1>Love</h1>
+    <!-- before & after don't work with self-closing tags -->
+    <img src="/images/porsche-1851246_1920.jpg" alt="">
+</body>
+</html>
