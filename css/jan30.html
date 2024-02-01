@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url("fonts.css");
+    *, ::before, ::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: black;
+    }
+    a{
+        text-decoration: none;
+    }
+    .section{
+        padding: 3rem 10vw;
+    }
+    .btn{
+        background-color: blanchedalmond;
+        color: black;
+        padding: 0.5rem 1.5rem;
+        font-family: ubuntu;
+        font-size: 1.3rem;
+        border: solid;
+        border-radius: 5px;
+    }
+    .btn:hover{
+        background-color: transparent;
+        color: white;
+    }
+    #title-section{
+        padding: 1rem 10vw;
+    }
+    .site-title{
+        font-family: Dhurjati;
+        font-size: 3.5rem;
+        line-height: 3rem;
+        text-transform: capitalize;
+        font-variant: small-caps;
+        color: rgb(207, 207, 0);
+        text-align: left;   /* default */
+    }
+    .site-text{
+        border: red solid;
+        font-family: Ubuntu;
+        font-size: 1.5rem;
+        line-height: 1.4em;
+        margin-bottom: 2rem;
+    }
+    #section1{
+        background-color: olive;
+        text-align: right;
+    }
+    #section2{
+        color: rgb(207, 207, 0);
+        text-align: center;
+    }
+    #section3{
+        position: relative;
+        color: rgb(207, 207, 0); 
+        /* color: white; */
+        text-align: justify;
+    }
+    #section3::before{
+        content: "";
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url("images/city_night.jpg") no-repeat center/100vw;
+        z-index: -1;
+        opacity: 0.55;
+    }
+</style>
+<body>
+    <div class="section" id="title-section">
+        <h1 class="site-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, cumque expedita!</h1>
+    </div>
+
+    <div class="section" id="section1">
+        <p class="site-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nobis libero beatae ut labore magnideleniti quibusdam corrupti est atque? Mollitia illum ad, nesciunt quibusdam voluptatibus blanditiis maiores laborum ullam nemo id culpa, hic recusandae qui adipisci velit ratione consequatur v? Vero eveniet rem tempore quos veniam, deleniti a deserunt.</p>
+
+        <a href="#" class="btn">Button 1</a>
+        <a href="#" class="btn">Button 2</a>
+    </div>
+    
+    <div class="section" id="section2">
+        <p class="site-text">Reprehenderit, accusantium perferendis corporis maiores nemo asperiores fugit vitae nisi. Commodiinventore impedit autem quo molestias obcaecati eum tenetur cumque illo animi ducimus possimus blanditiis ullam eligendi veniam reiciendis accusantium sapiente, cupiditate natus quas beatae ipsum temporibus fugiat aut. Modi iure voluptatum unde eius reiciendis omnis nobis ea natus v!</p>
+        
+        <a href="#" class="btn">Button 3</a>
+        <a href="#" class="btn">Button 4</a>
+    </div>
+
+    <div class="section" id="section3">
+        <p class="site-text">Quibusdam, molestias eligendi nostrum quos commodi modi reprehenderit officiis fuga laborequaeeum id assumenda dolores maiores quam, nam, in nulla explicabo quod sapiente optio aperiam dolore iusto! Pariatur molestias facere eos nostrum facilis quisquam quod ad, placeat soluta voluptates natus velit ipsa sint dignissimos quis sequi obcaecati accusantium mollitia.</p>
+
+        <a href="#" class="btn">Button 5</a>
+        <a href="#" class="btn">Button 6</a>
+    </div>
+</body>
+</html>
