@@ -1,0 +1,50 @@
+@import url("/css/fonts.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------- Variables & Global Styling ------------------------------- */
+:root{
+    --primary-fonts: "Basis-regular", sans-serif;
+    --title-fonts: "Reckless-light", monospace;
+
+    --black: #222222;
+    --dark-green: #1B4942;
+    --btn-hover-color: #246f61;
+    --light-green: #3BECB9;
+    --color-light: #F8FAF4;
+    --white: #FFFFFF;
+}
+body{
+    font-family: var(--primary-fonts);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/* ------------------------------- Navbar ------------------------------- */
+nav{
+    background-color: green;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.nav-left, .nav-right{
+    border: solid black;
+    background-color: red;
+    height: 20px;
+}
+.nav-left{
+    width: 60%;
+}
+.nav-right{
+    width: 20%;
+}

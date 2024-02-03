@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        border: solid red;
+        display: flex;
+        height: 100vh;
+        /* gap: 1rem; */
+
+        /* justify-content: center; */
+        /* justify-content: right; */
+        /* justify-content: left; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+
+        /* align-items: center; */
+        /* align-items: flex-end; */
+        /* align-items: flex-start; */
+
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+        /* Short cut for flex-direction & flex-flow */
+        /* flex-flow: flex-direction flex-wrap; */
+
+        /* justify-content & align-items will switch their roles */
+        /* align-items: center;
+        align-items: flex-start;
+        align-items: flex-end;
+        justify-content: center;
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly; */
+    }
+    .boxes{
+        border: solid green;
+        height: 200px;
+        width: 200px;
+        /* margin: 0 1rem; */
+
+        /* flex-basis: 200px; */
+    }
+    
+    #box1{
+        /* flex-shrink: 1;     default */
+        flex-shrink: 0;
+        /* order: 0;       default */
+    }
+    #box2{
+        flex-shrink: 2;
+        flex-grow: 3;
+        order: 1;
+    }
+    #box3{
+        flex-shrink: 3;
+        /* align-self: center; */
+    }
+    #box4{
+        /* flex-grow: 0;       default */
+        flex-grow: 1;
+    }
+    #box5{
+        flex-grow: 2;
+        order: 3;
+    }
+</style>
+<body>
+    <!-- Flex-box -->
+    <div class="container">
+        <div class="boxes" id="box1">Box 1</div>
+        <div class="boxes" id="box2">Box 2</div>
+        <div class="boxes" id="box3">Box 3</div>
+        <div class="boxes" id="box4">Box 4</div>
+        <div class="boxes" id="box5">Box 5</div>
+        <div class="boxes" id="box6">This is Box 6</div>
+    </div>
+</body>
+</html>

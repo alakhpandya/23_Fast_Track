@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Reckless-light";
+    src: url("/css/fonts/RecklessNeue-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Reckless-light";
+    src: url("/css/fonts/RecklessNeue-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Reckless-light";
+    src: url("/css/fonts/RecklessNeue-Bold.ttf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Basis-regular";
+    src: url("/css/fonts/FontsFree-Net-BasisGrotesquePro-Regular.ttf");
+}
