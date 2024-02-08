@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -10,13 +13,74 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <ul class="nav-left">
+    <header>
+        <nav>
+            <a href="index.html" class="brand-logo">
+                <img class="nav-logo-img" src="/images/nav_logo_black.svg" alt="">
+            </a>
+            <ul class="nav-left">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Product</a>&nbsp;
+                    <i class="fa-solid fa-angle-down down-arrow"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Solutions</a>&nbsp;
+                    <i class="fa-solid fa-angle-down down-arrow"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Resources</a>&nbsp;
+                    <i class="fa-solid fa-angle-down down-arrow"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Pricing</a>
+                    <div class="left-border"></div>
+                    <div class="bottom-border"></div>
+                    <div class="right-border"></div>
+                    <div class="top-border"></div>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <div class="creator-login">
+                    <a href="#" class="creator-login-link">Creator login</a>
+                    <div class="black-border"></div>
+                    <div class="green-border"></div>
+                </div>
 
-        </ul>
-        <div class="nav-right">
-            
-        </div>
-    </nav>
+                <a href="#" class="btn nav-btn">Start for free</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="section-1">
+            <div class="img-container">
+                <img src="/images/section1_img.avif" alt="">
+            </div>
+            <div class="form-container">
+                <p class="section-title">Share what you know; we'll help you get paid for it</p>
+                <p class="section-text">Teachable helps creators engage their online audiences and get paid on their own terms with courses, coaching, and downloadable content.</p>
+
+                <p class="small-text">Enter your email:</p>
+                <form action="">
+                    <input type="email" name="" placeholder="hello@example.com" id="">
+
+                    <input type="submit" value="Join for free" class="btn section-btn">
+                </form>
+            </div>
+        </section>
+
+        <section id="section-2">
+            <div>
+                <p class="secondary-title">The community you need. The community they want.</p>
+                <p class="section-text">Community has arrived at Teachable. Now one login unlocks the most engaging learning experience on the Internet for you and your students. Drive income and impact with community, courses, coaching, and digital products on one simple-to-use platform.</p>
+                <a href="#" class="section-btn btn">Learn more</a>
+            </div>
+            <div>
+                <img src="/images/section2_img.avif" class="video-thumbnail" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
