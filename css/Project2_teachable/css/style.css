@@ -175,17 +175,17 @@ nav{
 /* ------------------------------- Main ------------------------------- */
 
 section{
-    padding: 0 11%;
+    padding: 0 15%;
     display: flex;
 }
 .section-title{
     color: var(--dark-green);
-    font-size: 3.75rem;
-    line-height: 4.375rem;
+    font-size: 3rem;
+    line-height: 4rem;
     font-family: var(--title-fonts);
 }
 .small-text{
-    font-size: 0.9rem;
+    font-size: 0.75rem;
 }
 
 /* ------------------------------- Section-1------------------------------- */
@@ -198,7 +198,7 @@ section{
     width: 550px;
 }
 .section-text{
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 2rem;
     margin-top: 2rem;
 }
@@ -246,4 +246,95 @@ section{
 
 .video-thumbnail{
     width: 550px;
+}
+
+
+
+/* ------------------------------- Section-6------------------------------- */
+#section-6{
+    display: block;
+    text-align: center;
+    color: var(--dark-green);
+    padding-bottom: 7rem;
+}
+
+#section-6 .secondary-title{
+    color: var(--dark-green);
+}
+.card-container{
+    display: flex;
+    margin: 3rem 0;
+    justify-content: space-between;
+}
+.card{
+    text-align: left;
+    width: 310px;
+}
+.card-number{
+    font-family: var(--title-fonts);
+    font-size: 1.8rem;
+    border-bottom: solid 2px;
+    padding-bottom: 5px;
+}
+/* .card hr{
+    background-color: var(--dark-green);
+    height: 3px;
+    margin: 0.5rem 0 1.5rem;
+} */
+
+.card-title{
+    font-size: 1.8rem;
+    margin: 2rem 0;
+}
+
+/* ------------------------------- Section-7------------------------------- */
+#section-7{
+    background-color: var(--black);
+    color: var(--white);
+    display: block;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+#section-7 .section-title{
+    color: var(--white);
+    padding: 0 15%;
+}
+#section-7 .creator-login{
+    width: fit-content;
+    margin: 3rem auto 2rem;
+}
+#section-7 .creator-login-link{
+    color: var(--white);
+}
+#section-7 .black-border{
+    background-color: var(--white);
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 3rem 0;
+    text-align: left;
+}
+.feature-img{
+    width: 450px;
+}
+.feature-title{
+    font-size: 1.8rem;
+}
+.section-link{
+    text-decoration: underline;
+    color: var(--white);
+}
+.section-link:hover{
+    color: var(--light-green);
+}
+.feature-list{
+    list-style: disc;
+    padding-left: 2rem;
+}
+.feature-list li{
+    margin: 1rem 0;
 }
