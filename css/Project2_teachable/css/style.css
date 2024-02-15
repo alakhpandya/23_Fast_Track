@@ -8,10 +8,33 @@
 
 /* ------------------------------- Variables & Global Styling ------------------------------- */
 :root{
-    --primary-fonts: "Basis-regular", sans-serif;
-    --title-fonts: "Reckless-light", monospace;
+    --primary-fonts: sans-serif;
+    --title-fonts: monospace;
 
-    --black: #222222;
+    /* --primary-fonts: "Basis-regular", sans-serif;
+    --title-fonts: "Reckless-light", monospace; */
+
+    --black: #caf0f8;
+    --dark-green: #ade8f4;
+    --btn-hover-color: #0096c7;
+    --light-green: #0077b6;
+    --light-grey: #457b9d;
+    --medium-grey: #a8dadc;
+    --dark-grey: #cfeaeb;
+    --color-light: #023e8a;
+    --white: #03045e;
+
+    /* --black: #03045e;
+    --dark-green: #023e8a;
+    --btn-hover-color: #0077b6;
+    --light-green: #0096c7;
+    --light-grey: #cfeaeb;
+    --medium-grey: #a8dadc;
+    --dark-grey: #457b9d;
+    --color-light: #ade8f4;
+    --white: #caf0f8; */
+
+    /* --black: #222222;
     --dark-green: #1B4942;
     --btn-hover-color: #246f61;
     --light-green: #3BECB9;
@@ -19,10 +42,11 @@
     --medium-grey: #e1e1e1;
     --dark-grey: grey;
     --color-light: #F8FAF4;
-    --white: #FFFFFF;
+    --white: #FFFFFF; */
 }
 body{
     font-family: var(--primary-fonts);
+    background-color: var(--white);
 }
 a{
     text-decoration: none;
@@ -206,6 +230,9 @@ section{
 #section-1 .small-text{
     margin: 4rem 0 1rem;
 }
+#section-1 .form-container{
+    color: var(--black);
+}
 #section-1 form{
     display: flex;
     align-items: center;
@@ -337,4 +364,52 @@ section{
 }
 .feature-list li{
     margin: 1rem 0;
+}
+
+
+#section-9{
+    background-color: var(--dark-green);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: var(--white);
+}
+.carousel-item{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.owl-carousel .owl-item .client-img{
+    height: 200px;
+    width: 200px;
+}
+.client-review{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-family: var(--title-fonts);
+    font-style: italic;
+}
+.client-name{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 1rem 0 0;
+}
+.client-company{
+    font-weight: 600;
+}
+
+.owl-nav{
+    /* border: solid red 4px; */
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-arrow{
+    font-size: 2rem;
+    cursor: pointer;
 }
