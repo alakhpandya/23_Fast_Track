@@ -14,7 +14,7 @@
     /* --primary-fonts: "Basis-regular", sans-serif;
     --title-fonts: "Reckless-light", monospace; */
 
-    --black: #caf0f8;
+    /* --black: #caf0f8;
     --dark-green: #ade8f4;
     --btn-hover-color: #0096c7;
     --light-green: #0077b6;
@@ -22,7 +22,7 @@
     --medium-grey: #a8dadc;
     --dark-grey: #cfeaeb;
     --color-light: #023e8a;
-    --white: #03045e;
+    --white: #03045e; */
 
     /* --black: #03045e;
     --dark-green: #023e8a;
@@ -34,7 +34,7 @@
     --color-light: #ade8f4;
     --white: #caf0f8; */
 
-    /* --black: #222222;
+    --black: #222222;
     --dark-green: #1B4942;
     --btn-hover-color: #246f61;
     --light-green: #3BECB9;
@@ -42,7 +42,7 @@
     --medium-grey: #e1e1e1;
     --dark-grey: grey;
     --color-light: #F8FAF4;
-    --white: #FFFFFF; */
+    --white: #FFFFFF;
 }
 body{
     font-family: var(--primary-fonts);
@@ -319,6 +319,7 @@ section{
     background-color: var(--black);
     color: var(--white);
     display: block;
+    /* padding: 5rem 0; */
     padding-top: 5rem;
     padding-bottom: 5rem;
     text-align: center;
