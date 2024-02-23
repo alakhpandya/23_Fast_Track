@@ -1,0 +1,17 @@
+/* Samarkan Fonts */
+@font-face {
+    font-family: vastra-logo;
+    src: url("/css/fonts/SAMAN___.TTF");
+}
+
+/* Kaivalya fonts */
+@font-face {
+    font-family: indian-regular;
+    src: url("/css/fonts/KaivalyaIkiikocom-0Wy9r.otf");
+}
+
+/* Exo */
+@font-face {
+    font-family: vastra-normal;
+    src: url("/css/fonts/Exo2-VariableFont_wght.ttf");
+}

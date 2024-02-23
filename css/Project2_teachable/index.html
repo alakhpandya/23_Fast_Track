@@ -20,30 +20,34 @@
 <body>
     <header>
         <nav>
-            <a href="index.html" class="brand-logo">
-                <img class="nav-logo-img" src="/images/nav_logo_black.svg" alt="">
-            </a>
-            <ul class="nav-left">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Product</a>&nbsp;
-                    <i class="fa-solid fa-angle-down down-arrow"></i>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Solutions</a>&nbsp;
-                    <i class="fa-solid fa-angle-down down-arrow"></i>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Resources</a>&nbsp;
-                    <i class="fa-solid fa-angle-down down-arrow"></i>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Pricing</a>
-                    <div class="left-border"></div>
-                    <div class="bottom-border"></div>
-                    <div class="right-border"></div>
-                    <div class="top-border"></div>
-                </li>
-            </ul>
+            <div class="nav-expand">
+                <a href="index.html" class="brand-logo">
+                    <img class="nav-logo-img" src="/images/nav_logo_black.svg" alt="">
+                </a>
+            
+                <i class="fa-solid fa-bars bar-icon" onclick="document.querySelector('.nav-expand').classList.toggle('show-nav'); document.querySelector('.bar-icon').classList.toggle('show-bar')"></i>
+                <ul class="nav-left">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Product</a>&nbsp;
+                        <i class="fa-solid fa-angle-down down-arrow"></i>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Solutions</a>&nbsp;
+                        <i class="fa-solid fa-angle-down down-arrow"></i>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Resources</a>&nbsp;
+                        <i class="fa-solid fa-angle-down down-arrow"></i>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Pricing</a>
+                        <div class="left-border"></div>
+                        <div class="bottom-border"></div>
+                        <div class="right-border"></div>
+                        <div class="top-border"></div>
+                    </li>
+                </ul>
+            </div>
             <div class="nav-right">
                 <div class="creator-login">
                     <a href="#" class="creator-login-link">Creator login</a>
@@ -82,7 +86,7 @@
             <div>
                 <img src="/images/section2_img.avif" class="video-thumbnail" alt="">
             </div>
-        </section>
+        </section> 
 
         <section id="section-6">
             <div>

@@ -87,10 +87,27 @@ nav{
     border-bottom: 1px solid var(--black);
     padding: 0 50px 0 200px;
 }
-.nav-left, .nav-right{
-    /* border: solid black; */
-    /* background-color: red; */
+.bar-icon{
+    display: none;
+    cursor: pointer;
+    color: var(--dark-green);
 }
+.show-bar{
+    color: var(--white);
+}
+.nav-expand{
+    height: 5rem;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.show-nav{
+    height: 19rem;
+    background-color: var(--dark-green);
+}
+/* .nav-left, .nav-right{
+    border: solid black;
+    background-color: red;
+} */
 .nav-left{
     width: 50%;
     display: flex;
@@ -413,4 +430,49 @@ section{
 .nav-arrow{
     font-size: 2rem;
     cursor: pointer;
+}
+
+/* ------------------------------------------ Media Queries ------------------------------------------ */
+@media (max-width: 1200px){
+    .nav-left{
+        width: 30rem;
+    }
+    .nav-right{
+        width: 16rem;
+    }
+}
+@media (max-width: 1000px){
+    nav{
+        align-items: flex-start;
+        padding-left: 0px;
+    }
+    .nav-expand{
+        z-index: 100;
+    }
+    .nav-left{
+        padding-top: 6rem;
+        padding-left: 50px;
+        padding-right: 50px;
+        flex-direction: column;
+        gap: 2rem;
+        width: 350px;
+    }
+    .brand-logo{
+        top: 1.5rem
+    }
+    .bar-icon{
+        display: inline;
+        position: absolute;
+        top: 1.5rem;
+        left: 300px;
+        font-size: 1.5rem;
+    }
+    .nav-item{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-link{
+        color: var(--white);
+        padding-bottom: 0px;
+    }
 }
