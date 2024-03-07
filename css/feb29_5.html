@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: aliceblue;
+      font-family: sans-serif;
+    }
+    .container{
+        /* display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem; */
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    #c1 {
+      background-color: blueviolet;
+      /* grid-column: span 2; */
+    }
+    #c2 {
+      background-color: slategray;
+    }
+    #c3{
+        /* grid-row: span 2; */
+    }
+    #c5 {
+      background-color: #333;
+      /* grid-column: span 2; */
+    }
+    #c1,
+    #c2,
+    #c5 {
+      color: white;
+    }
+    .user {
+      /* border: solid red; */
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .profile-pic {
+      height: 50px;
+      width: 50px;
+      border: solid red;
+      border-radius: 50%;
+    }
+    .name {
+      font-size: 1rem;
+      margin-bottom: 2px;
+    }
+    .card-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 1.5rem 0;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!-- <div class="card">
+        <div class="user">
+            <div class="profile-pic">
+
+            </div>
+            <div class="user-name">
+                <h3 class="name"></h3>
+                <p class="role"></p>
+            </div>
+        </div>
+        <p class="card-title">lorem27</p>
+        <p class="card-text">lorem90</p>
+    </div> -->
+
+      <!-- (.card>(.user>(.profile-pic+.user-name>(h3.name+p.role)))+(p.card-title>lorem27)+(p.card-text>lorem90))*5 -->
+
+      <div class="card" id="c1">
+        <div class="user">
+          <div class="profile-pic"></div>
+          <div class="user-name">
+            <h3 class="name">Jalp Panchal</h3>
+            <p class="role">Varified Graduate</p>
+          </div>
+        </div>
+        <p class="card-title">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima sint
+          beatae et totam nam, iste doloribus autem quibusdam aut odit,
+          similique officia. Libero praesentium aperiam distinctio. Ipsa?
+        </p>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illum
+          iusto provident deserunt rem? Deserunt, porro. Delectus quidem ullam
+          asperiores veritatis repellat odio incidunt quaerat suscipit
+          praesentium cumque iste alias possimus, exercitationem aliquid fugit
+          dolores deleniti vero accusantium cupiditate necessitatibus. Sunt
+          laboriosam dignissimos similique rerum aperiam cupiditate voluptatum
+          perferendis dolorum asperiores, sapiente culpa magnam eaque voluptate
+          officia, doloremque incidunt. Voluptatum quo dicta consectetur
+          veritatis eius asperiores. Aspernatur, aut. Recusandae obcaecati,
+          numquam amet, ullam corrupti laudantium, eveniet perferendis quos
+          suscipit maiores perspiciatis eaque! Illo quaerat aut eius incidunt,
+          corporis similique facere?
+        </p>
+      </div>
+      <div class="card" id="c2">
+        <div class="user">
+          <div class="profile-pic"></div>
+          <div class="user-name">
+            <h3 class="name"></h3>
+            <p class="role"></p>
+          </div>
+        </div>
+        <p class="card-title">
+          Alias omnis non velit sed facere, autem sit neque porro distinctio
+          cumque natus ipsum excepturi impedit dolor, rem vitae quisquam cum id
+          amet hic soluta dicta fugiat.
+        </p>
+        <p class="card-text">
+          Tempora sunt necessitatibus quae harum dolores et commodi architecto
+          magni dolore, sed ratione id beatae culpa hic quo enim, porro vitae?
+          Nobis dicta neque aspernatur? Rem incidunt eum eos ex obcaecati autem
+          illum, iure sunt iusto quos, totam possimus molestiae, facere vero
+          assumenda corrupti hic quisquam itaque neque! Asperiores atque illum,
+          aperiam autem necessitatibus placeat nam molestias quaerat nisi,
+          voluptates est ea. Ea quae obcaecati consequatur eveniet laboriosam
+          blanditiis repellendus quasi est officia, et quisquam voluptate
+          asperiores, beatae harum eum nisi excepturi eaque deleniti ipsum
+          veritatis? Atque sed dolorem odio.
+        </p>
+      </div>
+      <div class="card" id="c3">
+        <div class="user">
+          <div class="profile-pic"></div>
+          <div class="user-name">
+            <h3 class="name"></h3>
+            <p class="role"></p>
+          </div>
+        </div>
+        <p class="card-title">
+          Vero distinctio reiciendis temporibus autem corrupti at ipsam dolores.
+          Accusamus quasi eligendi commodi saepe, eveniet excepturi nemo dolorum
+          iste cupiditate optio est quas dolores praesentium consequuntur
+          similique.
+        </p>
+        <p class="card-text">
+          Aliquam cum dolorum repudiandae. Vero itaque, ipsum dicta aut ut
+          placeat neque velit sequi explicabo tempore quos consequuntur veniam
+          pariatur? Placeat quaerat voluptatem, ipsum autem ea similique nemo ut
+          rerum cum laborum cupiditate, eum omnis quos harum! Assumenda quae
+          corrupti porro dolor maiores! Quidem maiores, neque, aliquid tenetur
+          dicta praesentium in voluptatibus amet facere eum distinctio placeat
+          veritatis quibusdam optio animi, inventore temporibus. Dolore laborum
+          velit, optio culpa explicabo saepe tenetur recusandae nemo amet fugit
+          in corrupti. Architecto quae nulla tempora similique ipsam eaque!
+          Sint, eum nihil. Voluptatum, suscipit assumenda!
+        </p>
+      </div>
+      <div class="card" id="c4">
+        <div class="user">
+          <div class="profile-pic"></div>
+          <div class="user-name">
+            <h3 class="name"></h3>
+            <p class="role"></p>
+          </div>
+        </div>
+        <p class="card-title">
+          Voluptate, reprehenderit unde illum dolore sequi consequatur totam
+          dolores excepturi minus voluptatibus, ducimus doloremque adipisci
+          minima soluta quas accusantium numquam magni incidunt. Impedit
+          deleniti quo ipsam alias?
+        </p>
+        <p class="card-text">
+          Veritatis est cupiditate quod corrupti voluptatibus, iure minus
+          laborum repellendus omnis ut ullam, ex asperiores accusamus in
+          inventore tempore, id dolor iste? Vitae tempora voluptatibus magnam
+          distinctio corrupti consequuntur, explicabo ullam praesentium? Quia
+          sapiente quos tempore nisi magnam quo, odit ducimus ad ipsum, quidem
+          impedit, inventore soluta magni nam assumenda corrupti. Distinctio
+          mollitia aut qui, magnam vitae, laudantium nihil, animi tenetur quia
+          eius officia? Deserunt omnis qui architecto quasi, nemo alias iure
+          minima beatae maxime velit, fugit ea. Qui aperiam sequi magni. Odit,
+          repellendus. Esse provident minima obcaecati numquam laborum?
+        </p>
+      </div>
+      <div class="card" id="c5">
+        <div class="user">
+          <div class="profile-pic"></div>
+          <div class="user-name">
+            <h3 class="name"></h3>
+            <p class="role"></p>
+          </div>
+        </div>
+        <p class="card-title">
+          Consequuntur cumque facilis facere debitis similique, tempore aperiam
+          sapiente sequi quis maiores voluptas aspernatur, perspiciatis vero!
+          Perspiciatis neque ratione voluptatem, officiis quaerat voluptatum
+          vitae ipsum atque quasi?
+        </p>
+        <p class="card-text">
+          Eligendi quo vel consequuntur animi, aliquid laborum qui explicabo
+          culpa soluta commodi necessitatibus beatae adipisci, inventore
+          perspiciatis exercitationem amet repudiandae recusandae quidem iure
+          laudantium rerum. Pariatur ab aut quam quas repellendus nobis, facere
+          perferendis temporibus, voluptate doloremque voluptas tempora nemo
+          cupiditate fugit labore hic distinctio. Distinctio nulla recusandae
+          quos ratione ab, eaque nostrum, et accusamus excepturi dolores
+          repellendus iste iusto repudiandae incidunt culpa dolorem nemo ullam
+          placeat aliquam atque dolorum temporibus sunt vitae. Ullam itaque
+          reiciendis provident veritatis fuga, ex eveniet aspernatur ipsum quam
+          rem minima dolor. At, voluptatem quae!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

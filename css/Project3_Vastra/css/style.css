@@ -14,7 +14,8 @@
     --dark_green: #0f620b;
     --medium_green: #41a654;
     --light_green: #92f08b;
-    --light_brown: #c2a167;
+    /* --light_brown: #c2a167; */
+    --light_brown: #fbe4bd;
     --dark_brown: #7d601c;
     --white: white;
 
@@ -95,6 +96,10 @@ nav .peocock-svg{
     color: var(--light_green);
     position: relative;
     margin-top: 10rem;
+    max-width: 650px;
+}
+.login-form-container{
+    max-width: 450px;
 }
 .login-signup-form{
     border: solid var(--light_green);
@@ -110,12 +115,16 @@ nav .peocock-svg{
     left: 1.5rem;
     background-color: var(--dark_green);
 }
+.user-info{
+    display: flex;
+    flex-direction: column;
+}
 .input-box{
     height: 2.5rem;
     margin-bottom: 1rem;
     position: relative;
 }
-.input-box input{
+.input-box input, .input-box select{
     height: 100%;
     width: 100%;
     border: none;
@@ -126,7 +135,10 @@ nav .peocock-svg{
     border-bottom: solid 1px var(--light_green);
     color: var(--light_green);
 }
-.input-box input:focus{
+.input-box select{
+    font-size: 1rem;
+}
+.input-box input:focus, .input-box input:valid{
     border: solid 2px var(--light_green);
     border-radius: 5px;
 }
@@ -138,13 +150,59 @@ nav .peocock-svg{
     background-color: var(--dark_green);
     transition: 0.2s;
 }
-input:focus + label{
+input:focus + label, input:valid + label{
     top: 0px;
     left: 5px;
     font-size: 0.9rem;
 }
+.remember-fgt-pwd-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+.site-link{
+    color: var(--light_brown);
+    text-decoration: underline;
+}
+.gender-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+}
 
- 
+.submit-box{
+    /* border: solid red; */
+    height: 2rem;
+    margin: 1.5rem 0;
+}
+.submit-btn{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    border: solid 2px var(--light_green);
+    background-color: var(--dark_green);
+    color: var(--light_green);
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background-color: var(--light_green);
+    color: var(--dark_green);
+}
+
+
+@media (min-width: 350px) {
+    .remember-fgt-pwd-box{
+        flex-direction: row;
+    }
+    .gender-box{
+        flex-direction: row;
+    }
+}
 @media (min-width: 650px) { 
     .show-nav{
         height: 5rem;
@@ -174,5 +232,9 @@ input:focus + label{
     }
     .nav-link-seperator{
         display: none;
+    }
+    .user-info{
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
