@@ -14,11 +14,12 @@
     body {
       background-color: aliceblue;
       font-family: sans-serif;
+      padding: 1rem;
     }
     .container{
-        /* display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1rem; */
+        display: grid;
+        /* grid-template-columns: repeat(4, 1fr); */
+        gap: 1rem;
     }
     .card {
       background-color: white;
@@ -32,9 +33,7 @@
     #c2 {
       background-color: slategray;
     }
-    #c3{
-        /* grid-row: span 2; */
-    }
+    
     #c5 {
       background-color: #333;
       /* grid-column: span 2; */
@@ -61,10 +60,39 @@
       margin-bottom: 2px;
     }
     .card-title {
-      font-size: 1.4rem;
+      font-size: 1.7rem;
       font-weight: 600;
       margin: 1.5rem 0;
+      line-height: 1.3em;
     }
+    .card-text{
+      font-size: 1.15rem;
+      line-height: 1.4em;
+    }
+
+
+
+    /* Media queries */
+    /* @media (min-width: 768px) {
+      .container{
+        grid-template-columns: repeat(2, 1fr);
+      }
+      #c1 {
+        grid-column: span 2;
+      }
+      #c3{
+        grid-row: span 2;
+      }
+      #c5 {
+        grid-column: span 2;
+      }
+    }
+    @media (min-width: 1400px) {
+      .container{
+        grid-template-columns: repeat(4, 1fr);
+      }
+    } */
+
   </style>
   <body>
     <div class="container">
@@ -94,18 +122,11 @@
         </div>
         <p class="card-title">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima sint
-          beatae et totam nam, iste doloribus autem quibusdam aut odit,
-          similique officia. Libero praesentium aperiam distinctio. Ipsa?
+          beatae et, similique officia. Libero praesentium aperiam distinctio. Ipsa?
         </p>
         <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illum
-          iusto provident deserunt rem? Deserunt, porro. Delectus quidem ullam
-          asperiores veritatis repellat odio incidunt quaerat suscipit
-          praesentium cumque iste alias possimus, exercitationem aliquid fugit
-          dolores deleniti vero accusantium cupiditate necessitatibus. Sunt
-          laboriosam dignissimos similique rerum aperiam cupiditate voluptatum
-          perferendis dolorum asperiores, sapiente culpa magnam eaque voluptate
-          officia, doloremque incidunt. Voluptatum quo dicta consectetur
+          Sunt laboriosam dignissimos similique rerum aperiam cupiditate voluptatum
+          Lorem ipsum dolor sit, amet consectetur. officia, doloremque incidunt. Voluptatum quo dicta consectetur
           veritatis eius asperiores. Aspernatur, aut. Recusandae obcaecati,
           numquam amet, ullam corrupti laudantium, eveniet perferendis quos
           suscipit maiores perspiciatis eaque! Illo quaerat aut eius incidunt,
@@ -121,21 +142,12 @@
           </div>
         </div>
         <p class="card-title">
-          Alias omnis non velit sed facere, autem sit neque porro distinctio
-          cumque natus ipsum excepturi impedit dolor, rem vitae quisquam cum id
-          amet hic soluta dicta fugiat.
+          Alias omnis non velit sed facere, autem sit neque porro distinctior?
         </p>
         <p class="card-text">
           Tempora sunt necessitatibus quae harum dolores et commodi architecto
           magni dolore, sed ratione id beatae culpa hic quo enim, porro vitae?
-          Nobis dicta neque aspernatur? Rem incidunt eum eos ex obcaecati autem
-          illum, iure sunt iusto quos, totam possimus molestiae, facere vero
-          assumenda corrupti hic quisquam itaque neque! Asperiores atque illum,
-          aperiam autem necessitatibus placeat nam molestias quaerat nisi,
-          voluptates est ea. Ea quae obcaecati consequatur eveniet laboriosam
-          blanditiis repellendus quasi est officia, et quisquam voluptate
-          asperiores, beatae harum eum nisi excepturi eaque deleniti ipsum
-          veritatis? Atque sed dolorem odio.
+          Nobis dicta neque aspernatur?
         </p>
       </div>
       <div class="card" id="c3">
@@ -147,10 +159,7 @@
           </div>
         </div>
         <p class="card-title">
-          Vero distinctio reiciendis temporibus autem corrupti at ipsam dolores.
-          Accusamus quasi eligendi commodi saepe, eveniet excepturi nemo dolorum
-          iste cupiditate optio est quas dolores praesentium consequuntur
-          similique.
+          Vero distinctio reiciendis temporibus autem corrupti at ipsam.
         </p>
         <p class="card-text">
           Aliquam cum dolorum repudiandae. Vero itaque, ipsum dicta aut ut
@@ -174,22 +183,11 @@
           </div>
         </div>
         <p class="card-title">
-          Voluptate, reprehenderit unde illum dolore sequi consequatur totam
-          dolores excepturi minus voluptatibus, ducimus doloremque adipisci
-          minima soluta quas accusantium numquam magni incidunt. Impedit
-          deleniti quo ipsam alias?
+          Voluptate, reprehenderit unde illum dolore sequi consequatur alias?
         </p>
         <p class="card-text">
-          Veritatis est cupiditate quod corrupti voluptatibus, iure minus
-          laborum repellendus omnis ut ullam, ex asperiores accusamus in
-          inventore tempore, id dolor iste? Vitae tempora voluptatibus magnam
-          distinctio corrupti consequuntur, explicabo ullam praesentium? Quia
-          sapiente quos tempore nisi magnam quo, odit ducimus ad ipsum, quidem
-          impedit, inventore soluta magni nam assumenda corrupti. Distinctio
-          mollitia aut qui, magnam vitae, laudantium nihil, animi tenetur quia
-          eius officia? Deserunt omnis qui architecto quasi, nemo alias iure
-          minima beatae maxime velit, fugit ea. Qui aperiam sequi magni. Odit,
-          repellendus. Esse provident minima obcaecati numquam laborum?
+          Veritatis est cupiditate quod corrupti voluptatibus, nemo alias iure
+          minima beatae maxime. Esse provident minima obcaecati numquam laborum?
         </p>
       </div>
       <div class="card" id="c5">
@@ -202,21 +200,13 @@
         </div>
         <p class="card-title">
           Consequuntur cumque facilis facere debitis similique, tempore aperiam
-          sapiente sequi quis maiores voluptas aspernatur, perspiciatis vero!
-          Perspiciatis neque ratione voluptatem, officiis quaerat voluptatum
-          vitae ipsum atque quasi?
+          sapiente lorem ipsum dolor sit. Vitae ipsum atque quasi?
         </p>
         <p class="card-text">
           Eligendi quo vel consequuntur animi, aliquid laborum qui explicabo
           culpa soluta commodi necessitatibus beatae adipisci, inventore
           perspiciatis exercitationem amet repudiandae recusandae quidem iure
-          laudantium rerum. Pariatur ab aut quam quas repellendus nobis, facere
-          perferendis temporibus, voluptate doloremque voluptas tempora nemo
-          cupiditate fugit labore hic distinctio. Distinctio nulla recusandae
-          quos ratione ab, eaque nostrum, et accusamus excepturi dolores
-          repellendus iste iusto repudiandae incidunt culpa dolorem nemo ullam
-          placeat aliquam atque dolorum temporibus sunt vitae. Ullam itaque
-          reiciendis provident veritatis fuga, ex eveniet aspernatur ipsum quam
+          laudantium provident veritatis fuga, ex eveniet aspernatur ipsum quam
           rem minima dolor. At, voluptatem quae!
         </p>
       </div>
