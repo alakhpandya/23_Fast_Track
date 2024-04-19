@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bar{
+        background-color: green;
+        height: 50px;
+        width: 10px;
+        /* animation-name: expand-bar;
+        animation-duration: 1s; */
+        /* animation-iteration-count: 3; */
+        /* animation-iteration-count: infinite; */
+
+        animation-name: expand-bar2;
+        animation-duration: 5s;
+        animation-iteration-count: 3;
+        animation-timing-function: steps(5);
+    }
+
+    @keyframes expand-bar{
+        from{
+            width: 10px;
+        }
+        to{
+            width:100%
+        }
+    }
+    @keyframes expand-bar2 {
+        0%{
+            width: 10px;
+        }
+        50%{
+            width: 100%;
+        }
+        100%{
+            width: 10px;
+        }
+    }
+
+    .sphere{
+        background-color: navy;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        position: absolute;
+        top: 80px;
+        left: 40px;
+
+        animation-duration: 4s;
+        /* animation-name: move-sphere; */
+    }
+    @keyframes move-sphere {
+        0%{
+            top: 80px;
+            left: 40px;
+        }
+        25%{
+            top: 400px;
+            left: 40px;
+            background-color: blueviolet;
+        }
+        50%{
+            top: 400px;
+            left: 400px;
+            background-color: violet;
+        }
+        75%{
+            top: 80px;
+            left: 400px;
+            background-color: pink;
+        }
+        100%{
+            background-color: red;
+        }
+    }
+</style>
+<body>
+    <div class="bar"></div>
+
+    <div class="sphere"></div>
+</body>
+</html>
